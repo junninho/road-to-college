@@ -1,0 +1,29 @@
+#footer {
+   	position: fixed;
+   	left: 0px;
+   	bottom: 0px;
+   	width: 100%;
+}
+
+p {
+    padding: 80px;
+}
+
+#action {
+	width: 250px;
+	position: absolute;
+	width: 200px;
+
+
+}
+
+.action-sheet-container .button {
+	margin-left: 0;
+  	margin-right: 0;
+	margin-top: 10px;
+	font-size: 1rem;
+}
+
+.action-sheet ul.action-sheet-list {
+	margin-right: 40px;
+}
