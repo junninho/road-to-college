@@ -5,7 +5,7 @@
    	width: 100%;
 }
 
-p {
+.grid-content p {
     padding: 80px;
 }
 
@@ -13,8 +13,6 @@ p {
 	width: 250px;
 	position: absolute;
 	width: 200px;
-
-
 }
 
 .action-sheet-container .button {
