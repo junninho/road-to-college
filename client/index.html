@@ -12,46 +12,187 @@
     <script src="/assets/js/app.js"></script>
   </head>
     <body>
-      <zf-offcanvas id="canvas-right" position="right">
-        <a href="#" zf-close="" class="close-button">×</a>
-        <ul class="thumbnails no-bullet">
-          <li>
-            <a href="#">
-              <img src="http://www.courageousthemovie.com/_images/_share/courageous_350banner2.gif">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://www.xs4all.nl/~fogier/delft_sig.gif">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://bbhs-58.com/images/image27443508.gif">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://www.vernontoday.ca/uploads/8/5/7/4/8574987/4544606_orig.gif">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://img.photobucket.com/albums/v423/boogiepimprula/NDSHomebrewHomeAd.gif">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://www.thegunzone.com/rkba/images/20-mugger.gif">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://i.imgur.com/b7O1cVd.gif?1">
-            </a>
-          </li>
-        </ul>
-      </zf-offcanvas>
+      <div>
+        <zf-offcanvas id="canvas-hub" position="right">
+          <div class="grid-block">
+              <div class="grid-content small-3">
+                <a class="canvas-buttons pin-button">Pin it</a>
+              </div>
+              <div class="grid-content medium-6">
+                <a class="canvas-title">HUB</a>
+              </div>
+              <div class="grid-content small-3">
+                <a class="canvas-buttons exit-button" zf-close="">X</a>
+              </div>
+          </div>
+          <div class="books">
+            <div class="grid-block">
+              <div id="cover" class="grid-block shrink"> <img src="http://ucrtoday.ucr.edu/wp-content/uploads/2012/08/Irwin-Sherman-Book-Cover.jpg"></div>
+              <div id="book-info" class="grid-block"><p>Book Name<br>Book Author</p></div>
+            </div>
+            <div class="grid-block">
+              <div id="cover" class="grid-block shrink"> <img src="http://images.veerle.duoh.com/uploads/design-article-images/adaptive-web-bookcover-final-design.jpg"></div>
+              <div id="book-info" class="grid-block"><p>Book Name<br>Book Author</p></div>
+            </div>
+            <div class="grid-block">
+              <div id="cover" class="grid-block shrink"> <img src="http://craigmod.com/images/journal/coccyx/aba-06.png"></div>
+              <div id="book-info" class="grid-block"><p>Book Name<br>Book Author</p></div>
+            </div>
+            <div class="grid-block">
+              <div id="cover" class="grid-block shrink"> <img src="http://www.creativindie.com/wp-content/uploads/2013/10/Enchantment-Book-Cover-Best-Seller1.jpg"></div>
+              <div id="book-info" class="grid-block"><p>Book Name<br>Book Author</p></div>
+            </div>
+            <div class="grid-block">
+              <div id="cover" class="grid-block shrink"> <img src="http://speckycdn.sdm.netdna-cdn.com/wp-content/uploads/2012/05/TBCE05.jpg"></div>
+              <div id="book-info" class="grid-block"><p>Book Name<br>Book Author</p></div>
+            </div>
+            <div class="grid-block">
+              <div id="cover" class="grid-block shrink"> <img src="http://blog.onpaperwings.com/uploaded_images/bookcover-793892.jpg"></div>
+              <div id="book-info" class="grid-block"><p>Book Name<br>Book Author</p></div>
+            </div>
+          </div
+        </zf-offcanvas>
+        <zf-offcanvas id="canvas-item-info" position="right">
+         <div class="grid-block">
+              <div class="grid-content small-3">
+                <a class="canvas-buttons">Pin it</a>
+              </div>
+              <div class="grid-content medium-6">
+                <a class="canvas-title">ITEM INFO</a>
+              </div>
+              <div class="grid-content small-3">
+                <a class="canvas-buttons exit-button" zf-close="">X</a>
+              </div>
+          </div>
+
+        </zf-offcanvas>
+      <zf-offcanvas id="canvas-search" position="right">
+          <div class="grid-block">
+              <div class="grid-content small-3">
+                <a class="canvas-buttons">Pin it</a>
+              </div>
+              <div class="grid-content medium-6">
+                <a class="canvas-title">SEARCH</a>
+              </div>
+              <div class="grid-content small-3">
+                <a class="canvas-buttons exit-button" zf-close="">X</a>
+              </div>
+          </div>
+
+        </zf-offcanvas>
+        <zf-offcanvas id="canvas-sorter" position="right">
+          <div class="grid-block">
+              <div class="grid-content small-3">
+                <a class="canvas-buttons">Pin it</a>
+              </div>
+              <div class="grid-content medium-6">
+                <a class="canvas-title">SORTER</a>
+              </div>
+              <div class="grid-content small-3">
+                <a class="canvas-buttons exit-button" zf-close="">X</a>
+              </div>
+          </div>
+
+        </zf-offcanvas>
+      <zf-offcanvas id="canvas-history" position="right">
+          <div class="grid-block">
+              <div class="grid-content small-3">
+                <a class="canvas-buttons">Pin it</a>
+              </div>
+              <div class="grid-content medium-6">
+                <a class="canvas-title">HISTORY</a>
+              </div>
+              <div class="grid-content small-3">
+                <a class="canvas-buttons exit-button" zf-close="">X</a>
+              </div>
+          </div>
+
+        </zf-offcanvas>
+        <zf-offcanvas id="canvas-contents" position="right">
+          <div class="grid-block">
+              <div class="grid-content small-3">
+                <a class="canvas-buttons">Pin it</a>
+              </div>
+              <div class="grid-content medium-6">
+                <a class="canvas-title">CONTENTS</a>
+              </div>
+              <div class="grid-content small-3">
+                <a class="canvas-buttons exit-button" zf-close="">X</a>
+              </div>
+          </div>
+
+        </zf-offcanvas>
+      <zf-offcanvas id="canvas-settings" position="right">
+          <div class="grid-block">
+              <div class="grid-content small-3">
+                <a class="canvas-buttons">Pin it</a>
+              </div>
+              <div class="grid-content medium-6">
+                <a class="canvas-title">SETTINGS</a>
+              </div>
+              <div class="grid-content small-3">
+                <a class="canvas-buttons exit-button" zf-close="">X</a>
+              </div>
+          </div>
+
+        </zf-offcanvas>
+        <zf-offcanvas id="canvas-help" position="right">
+          <div class="grid-block">
+              <div class="grid-content small-3">
+                <a class="canvas-buttons">Pin it</a>
+              </div>
+              <div class="grid-content medium-6">
+                <a class="canvas-title">HELP</a>
+              </div>
+              <div class="grid-content small-3">
+                <a class="canvas-buttons exit-button" zf-close="">X</a>
+              </div>
+          </div>
+
+        </zf-offcanvas>
+      <zf-offcanvas id="canvas-shop" position="right">
+          <div class="grid-block">
+              <div class="grid-content small-3">
+                <a class="canvas-buttons">Pin it</a>
+              </div>
+              <div class="grid-content medium-6">
+                <a class="canvas-title">SHOP</a>
+              </div>
+              <div class="grid-content small-3">
+                <a class="canvas-buttons exit-button" zf-close="">X</a>
+              </div>
+          </div>
+
+        </zf-offcanvas>
+        <zf-offcanvas id="canvas-customer-care" position="right">
+          <div class="grid-block">
+              <div class="grid-content small-3">
+                <a class="canvas-buttons">Pin it</a>
+              </div>
+              <div class="grid-content medium-6">
+                <a class="canvas-title">CUSTOMER CARE</a>
+              </div>
+              <div class="grid-content small-3">
+                <a class="canvas-buttons exit-button" zf-close="">X</a>
+              </div>
+          </div>
+
+        </zf-offcanvas>
+      <zf-offcanvas id="canvas-deauthorize" position="right">
+          <div class="grid-block">
+              <div class="grid-content small-3">
+                <a class="canvas-buttons">Pin it</a>
+              </div>
+              <div class="grid-content medium-6">
+                <a class="canvas-title">DEAUTHORIZE</a>
+              </div>
+              <div class="grid-content small-3">
+                <a class="canvas-buttons exit-button" zf-close="">X</a>
+              </div>
+          </div>
+
+        </zf-offcanvas>
+      </div>
   <!--Top menu bar-->
     <div class="menu-group primary" id="header">
       <div class="menu-group-left">
@@ -71,26 +212,28 @@
           <div zf-as-button="" title="Item One"></div>
             <div zf-as-content="" position="left" id="action" >
               <ul class="action-sheet-list">
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">HUB</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">ITEM INFO</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">SEARCH</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">SORTER</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">HISTORY</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">CONTENTS</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">SETTINGS</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">HELP</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">SHOP</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">CUSTOMER CARE</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">DEAUTHORIZE</a></li>
+                <li><a href="#" zf-open="canvas-hub" zf-hard-toggle="separate-actionsheet">HUB</a></li>
+                <li><a href="#" zf-open="canvas-item-info" zf-hard-toggle="separate-actionsheet">ITEM INFO</a></li>
+                <li><a href="#" zf-open="canvas-search" zf-hard-toggle="separate-actionsheet">SEARCH</a></li>
+                <li><a href="#" zf-open="canvas-sorter" zf-hard-toggle="separate-actionsheet">SORTER</a></li>
+                <li><a href="#" zf-open="canvas-history" zf-hard-toggle="separate-actionsheet">HISTORY</a></li>
+                <li><a href="#" zf-open="canvas-contents" zf-hard-toggle="separate-actionsheet">CONTENTS</a></li>
+                <li><a href="#" zf-open="canvas-settings" zf-hard-toggle="separate-actionsheet">SETTINGS</a></li>
+                <li><a href="#" zf-open="canvas-help" zf-hard-toggle="separate-actionsheet">HELP</a></li>
+                <li><a href="#" zf-open="canvas-shop" zf-hard-toggle="separate-actionsheet">SHOP</a></li>
+                <li><a href="#" zf-open="canvas-customer-care" zf-hard-toggle="separate-actionsheet">CUSTOMER CARE</a></li>
+                <li><a href="#" zf-open="canvas-deauthorize" zf-hard-toggle="separate-actionsheet">DEAUTHORIZE</a></li>
               </ul>
             </div>
         </div>
       </div>
     </div>
+
+
   <!--Page body content-->
     <div class="grid-frame">
       <div class="vertical grid-block">
-        <div class="grid-content">
+        <div class="grid-content content">
             <p>
             Marion Smart was thinking about Carla Zeus again. Carla was a modest queen with tall fingers and spiky abs.
             Marion walked over to the window and reflected on her deserted surroundings. She had always loved deserted Glasgow with its obnoxious, obedient oceans. It was a place that encouraged her tendency to feel happy.
