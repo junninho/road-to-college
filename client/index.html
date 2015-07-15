@@ -1,141 +1,377 @@
 <!doctype html>
 <html lang="en" ng-app="application">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prototype</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="/assets/css/app.css" rel="stylesheet" type="text/css">
-    <script src="/assets/js/foundation.js"></script>
-    <script src="/assets/js/templates.js"></script>
-    <script src="/assets/js/routes.js"></script>
-    <script src="/assets/js/app.js"></script>
-  </head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Prototype</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="/assets/css/app.css" rel="stylesheet" type="text/css">
+        <script src="/assets/js/foundation.js"></script>
+        <script src="/assets/js/templates.js"></script>
+        <script src="/assets/js/routes.js"></script>
+        <script src="/assets/js/app.js"></script>
+    </head>
     <body>
-      <zf-offcanvas id="canvas-right" position="right">
-        <a href="#" zf-close="" class="close-button">×</a>
-        <ul class="thumbnails no-bullet">
-          <li>
-            <a href="#">
-              <img src="http://www.courageousthemovie.com/_images/_share/courageous_350banner2.gif">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://www.xs4all.nl/~fogier/delft_sig.gif">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://bbhs-58.com/images/image27443508.gif">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://www.vernontoday.ca/uploads/8/5/7/4/8574987/4544606_orig.gif">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://img.photobucket.com/albums/v423/boogiepimprula/NDSHomebrewHomeAd.gif">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://www.thegunzone.com/rkba/images/20-mugger.gif">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://i.imgur.com/b7O1cVd.gif?1">
-            </a>
-          </li>
-        </ul>
-      </zf-offcanvas>
-  <!--Top menu bar-->
-    <div class="menu-group primary" id="header">
-      <div class="menu-group-left">
-        <ul class="menu-bar primary"
-          <li><a href="#"></a></li>
-        </ul>
-      </div>
-  <!-- Title Bar -->
-      <div class="menu-group-center">
-        <ul class="menu-bar primary">
-          <li><a href="#">Two Admirable Uncles Cooking to the Beat, A Short Story by idk</a></li>
-        </ul>
-      </div>
-  <!-- Reveals Action Sheet -->
-      <div class="menu-group-right">
-         <div zf-action-sheet="" >
-          <div zf-as-button="" title="Item One"></div>
-            <div zf-as-content="" position="left" id="action" >
-              <ul class="action-sheet-list">
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">HUB</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">ITEM INFO</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">SEARCH</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">SORTER</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">HISTORY</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">CONTENTS</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">SETTINGS</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">HELP</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">SHOP</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">CUSTOMER CARE</a></li>
-                <li><a href="#" zf-open="canvas-right" zf-hard-toggle="separate-actionsheet">DEAUTHORIZE</a></li>
-              </ul>
+        <div>
+    <!-- Hub FLy-Out -->
+            <zf-offcanvas id="canvas-hub" position="right">
+                <div class="grid-block">
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons pin-button">Pin it</a>
+                    </div>
+                    <div class="grid-content medium-6">
+                        <a class="canvas-title">HUB</a>
+                    </div>
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons exit-button" zf-close="">X</a>
+                    </div>
+                </div>
+                <div class="align-justify grid-block hub-action">
+                    <div class="small-4 grid-container hub-add"><p>Add to Label</p></div>
+                    <div class="small-4 grid-container hub-delete"><p>Delete</p></div>
+                </div>
+                <div class="books">
+                    <div class="grid-block">
+                        <div id="cover" class="grid-block shrink"> <img src="http://ucrtoday.ucr.edu/wp-content/uploads/2012/08/Irwin-Sherman-Book-Cover.jpg"></div>
+                        <div id="book-info" class="grid-block"><p>The Malaria Genome Projects<br>by Irwin Sherman</p></div>
+                    </div>
+                    <div class="grid-block">
+                        <div id="cover" class="grid-block shrink"> <img src="http://images.veerle.duoh.com/uploads/design-article-images/adaptive-web-bookcover-final-design.jpg"></div>
+                        <div id="book-info" class="grid-block"><p>Adaptive Web Design<br>by Aaron Gustafson</p></div>
+                    </div>
+                    <div class="grid-block">
+                        <div id="cover" class="grid-block shrink"> <img src="http://craigmod.com/images/journal/coccyx/aba-06.png"></div>
+                        <div id="book-info" class="grid-block"><p>Mobile First<br>by Luke Wroblewski</p></div>
+                    </div>
+                    <div class="grid-block">
+                        <div id="cover" class="grid-block shrink"> <img src="http://www.creativindie.com/wp-content/uploads/2013/10/Enchantment-Book-Cover-Best-Seller1.jpg"></div>
+                        <div id="book-info" class="grid-block"><p>Enchantment<br>by Guy Kawasaki</p></div>
+                    </div>
+                    <div class="grid-block">
+                        <div id="cover" class="grid-block shrink"> <img src="http://speckycdn.sdm.netdna-cdn.com/wp-content/uploads/2012/05/TBCE05.jpg"></div>
+                        <div id="book-info" class="grid-block"><p>Making Short Films<br>by Clifford Thurlow</p></div>
+                    </div>
+                    <div class="grid-block">
+                        <div id="cover" class="grid-block shrink"> <img src="http://bookcoverarchive.com/images/books/uncommon_sense.large.jpg"></div>
+                        <div id="book-info" class="grid-block"><p>Uncommon Sense<br>by Gary Becker</p></div>
+                    </div>
+                </div>
+            </zf-offcanvas>
+
+    <!-- Item Info Fly-Out -->
+            <zf-offcanvas id="canvas-item-info" position="right">
+                <div class="grid-block">
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons">Pin it</a>
+                    </div>
+                    <div class="grid-content medium-6">
+                        <a class="canvas-title">ITEM INFO</a>
+                    </div>
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons exit-button" zf-close="">X</a>
+                    </div>
+                </div>
+            </zf-offcanvas>
+
+    <!-- Search Fly-Out -->
+            <zf-offcanvas id="canvas-search" position="right">
+                <div class="grid-block">
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons">Pin it</a>
+                    </div>
+                    <div class="grid-content medium-6">
+                        <a class="canvas-title">SEARCH</a>
+                    </div>
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons exit-button" zf-close="">X</a>
+                    </div>
+                </div>
+            </zf-offcanvas>
+
+    <!-- Sorter Fly-Out -->
+            <zf-offcanvas id="canvas-sorter" position="right">
+                <div class="grid-block">
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons">Pin it</a>
+                    </div>
+                    <div class="grid-content medium-6">
+                        <a class="canvas-title">SORTER</a>
+                    </div>
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons exit-button" zf-close="">X</a>
+                    </div>
+                </div>
+            </zf-offcanvas>
+
+    <!-- History Fly-out -->
+            <zf-offcanvas id="canvas-history" position="right">
+                <div class="grid-block">
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons">Pin it</a>
+                    </div>
+                    <div class="grid-content medium-6">
+                        <a class="canvas-title">HISTORY</a>
+                    </div>
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons exit-button" zf-close="">X</a>
+                    </div>
+                </div>
+            </zf-offcanvas>
+
+    <!-- Contents Fly-Out -->
+            <zf-offcanvas id="canvas-contents" position="right">
+                <div class="grid-block">
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons">Pin it</a>
+                    </div>
+                    <div class="grid-content medium-6">
+                        <a class="canvas-title">CONTENTS</a>
+                    </div>
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons exit-button" zf-close="">X</a>
+                    </div>
+                </div>
+            </zf-offcanvas>
+
+    <!-- Settings Fly-Out -->
+            <zf-offcanvas id="canvas-settings" position="right">
+                <div class="grid-block">
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons">Pin it</a>
+                    </div>
+                    <div class="grid-content medium-6">
+                        <a class="canvas-title">SETTINGS</a>
+                    </div>
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons exit-button" zf-close="">X</a>
+                    </div>
+                </div>
+            </zf-offcanvas>
+
+    <!-- Help FLy-Out -->
+            <zf-offcanvas id="canvas-help" position="right">
+                <div class="grid-block">
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons">Pin it</a>
+                    </div>
+                    <div class="grid-content medium-6">
+                        <a class="canvas-title">HELP</a>
+                    </div>
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons exit-button" zf-close="">X</a>
+                    </div>
+                </div>
+                <div class="vertical grid-block help">
+                    <div class="grid-block"><a zf-open="canvas-whats-new" zf-hard-toggle="separate-actionsheet">What's New</a></div>
+                    <div class="grid-block"><a zf-open="canvas-update" zf-hard-toggle="separate-actionsheet">Check for Update</a></div>
+                    <div class="grid-block"><p></p></div>
+                    <div class="grid-block"><a zf-open="canvas-faq" zf-hard-toggle="separate-actionsheet">FAQ</a></div>
+                    <div class="grid-block"><a href="https://customercare.yuzu.com/hc/en-us" target="_blank">Contact Yuzu</a></div>
+                    <div class="grid-block"><a href="https://customercare.yuzu.com/hc/en-us/requests/new?community_id=public" target="_blank">Submit a Help Request</a></div>
+                </div>
+            </zf-offcanvas>
+
+    <!-- What's New Fly-Out -->
+            <zf-offcanvas id="canvas-whats-new" position="right">
+                <div class="grid-block">
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons">Pin it</a>
+                    </div>
+                    <div class="grid-content medium-6">
+                        <a class="canvas-title" >What's New</a>
+                    </div>
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons exit-button" zf-close="">X</a>
+                    </div>
+                </div>
+                <div class="vertical grid-block whats-new">
+                    <div class="grid-block"><a zf-open="canvas-help" zf-hard-toggle="separate-actionsheet">Back to Help</a></div>
+                    <div class="grid-block"><p class="new"><b>1. Read on the go</b><br>Access digital content online or download it to an iPad or Windows 8.1 device.*</p></div>
+                    <div class="grid-block"><p class="new"><b>2. Travel lighter</b><br>Replace many textbooks with an easy-to-use app that holds them all in one place.</p></div>
+                    <div class="grid-block"><p class="new"><b>3. Stay organized</b><br>Organize reading by term and course. Quickly find what you need, when you need it.</p></div>
+                    <div class="grid-block"><p class="new"><b>4. Learn easier</b><br>Highlight, flag important content, and add notes. Yuzu adapts to your learning style.</p></div>
+                    <div class="grid-block"><p class="new"><b>5. Dig deeper</b><br>Access a wide range of engaging course materials including rich, interactive content.</p></div>
+                </div>
+            </zf-offcanvas>
+
+    <!-- Update Fly-Out -->
+            <zf-offcanvas id="canvas-update" position="right">
+                <div class="grid-block">
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons">Pin it</a>
+                    </div>
+                    <div class="grid-content medium-6">
+                        <a class="canvas-title" >Check for Updates</a>
+                    </div>
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons exit-button" zf-close="">X</a>
+                    </div>
+                </div>
+                <div class="vertical grid-block update">
+                    <div class="grid-block"><a zf-open="canvas-help" zf-hard-toggle="separate-actionsheet">Back to Help</a></div>
+                    <div class="grid-block"><p>1.</p></div>
+                    <div class="grid-block"><p>2.</p></div>
+                    <div class="grid-block"><p>3.</p></div>
+                    <div class="grid-block"><p>4.</p></div>
+                </div>
+            </zf-offcanvas>
+
+    <!-- FAQS Fly-Out -->
+            <zf-offcanvas id="canvas-faq" position="right">
+                <div class="grid-block">
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons">Pin it</a>
+                    </div>
+                    <div class="grid-content medium-6">
+                        <a class="canvas-title" >FAQ</a>
+                    </div>
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons exit-button" zf-close="">X</a>
+                    </div>
+                </div>
+                <div class="vertical grid-block faq">
+                    <div class="grid-block"><a zf-open="canvas-help" zf-hard-toggle="separate-actionsheet">Back to Help</a></div>
+                    <div class="grid-block"><h3 id="faq-heading">What is Yuzu?<br></h3></div>
+                    <div class="grid-block">
+                        <p id="faq-text">
+                            Yuzu is a digital education platform from Barnes & Noble that breaks down the barriers between students and knowledge by enhancing the everyday learning experience.<br> For students, Yuzu combines a next-generation reading and note-taking experience in a simple app, with access to a catalog of rich and immersive content.<br>For educators, Yuzu makes it easier than ever to engage students with inspiring course materials.<br> For everyone, Yuzu makes learning more friendly, organized, and enjoyable.<br> Access Yuzu on your iPad or Windows 8 device, or online with your computer.*
+                        </p>
+                    </div>
+                </div>
+            </zf-offcanvas>
+
+    <!-- Shop Fly-Out -->
+            <zf-offcanvas id="canvas-shop" position="right">
+                <div class="grid-block">
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons">Pin it</a>
+                    </div>
+                    <div class="grid-content medium-6">
+                        <a class="canvas-title">SHOP</a>
+                    </div>
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons exit-button" zf-close="">X</a>
+                    </div>
+                </div>
+            </zf-offcanvas>
+
+    <!-- Customer Care Fly-Out -->
+            <zf-offcanvas id="canvas-customer-care" position="right">
+                <div class="grid-block">
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons">Pin it</a>
+                    </div>
+                    <div class="grid-content medium-6">
+                        <a class="canvas-title">CUSTOMER CARE</a>
+                    </div>
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons exit-button" zf-close="">X</a>
+                    </div>
+                </div>
+            </zf-offcanvas>
+
+    <!-- Deauthorize FLy-Out -->
+            <zf-offcanvas id="canvas-deauthorize" position="right">
+                <div class="grid-block">
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons">Pin it</a>
+                    </div>
+                    <div class="grid-content medium-6">
+                        <a class="canvas-title">DEAUTHORIZE</a>
+                    </div>
+                    <div class="grid-content small-3">
+                        <a class="canvas-buttons exit-button" zf-close="">X</a>
+                    </div>
+                </div>
+            </zf-offcanvas>
+        </div>
+    <!--Top menu bar-->
+        <div class="menu-group primary" id="header">
+            <div class="menu-group-left">
+                <ul class="menu-bar primary"
+                    <li><a href="#"></a></li>
+                </ul>
             </div>
         </div>
-      </div>
-    </div>
-  <!--Page body content-->
-    <div class="grid-frame">
-      <div class="vertical grid-block">
-        <div class="grid-content">
-            <p>
-            Marion Smart was thinking about Carla Zeus again. Carla was a modest queen with tall fingers and spiky abs.
-            Marion walked over to the window and reflected on her deserted surroundings. She had always loved deserted Glasgow with its obnoxious, obedient oceans. It was a place that encouraged her tendency to feel happy.
-            Then she saw something in the distance, or rather someone. It was the a modest figure of Carla Zeus.
-            Marion gulped. She glanced at her own reflection. She was an understanding, popular, cocoa drinker with brunette fingers and fragile abs. Her friends saw her as a powerful, powerless painter. Once, she had even made a cup of tea for a damaged kitten.
-            But not even an understanding person who had once made a cup of tea for a damaged kitten, was prepared for what Carla had in store today.
-            The sleet rained like gyrating snakes, making Marion confident. Marion grabbed a peculiar book that had been strewn nearby; she massaged it with her fingers.
-            As Marion stepped outside and Carla came closer, she could see the outrageous glint in her eye.
-            "I am here because I want a pencil," Carla bellowed, in an arrogant tone. She slammed her fist against Marion's chest, with the force of 4456 ostriches. "I frigging love you, Marion Smart."
-            Marion looked back, even more confident and still fingering the peculiar book. "Carla, I shrunk the kids," she replied.
-            They looked at each other with happy feelings, like two grubby, grisly guppies jogging at a very stupid Christening, which had piano music playing in the background and two admirable uncles cooking to the beat.
-            Marion studied Carla's tall fingers and spiky abs. Eventually, she took a deep breath. "I'm sorry, but I can't give you a pencil," she explained, in pitying tones.
-            Carla looked lonely, her body raw like a nervous, nosy newspaper.
-            Marion could actually hear Carla's body shatter into 5931 pieces. Then the modest queen hurried away into the distance.
-            Not even a mug of cocoa would calm Marion's nerves tonight.
-            <br>
-            <br>
-            <br>
-            THE END
-          </p>
+    <!-- Title Bar -->
+        <div class="menu-group-center">
+            <ul class="menu-bar primary">
+              <li><a href="#">Two Admirable Uncles Cooking to the Beat, A Short Story by idk</a></li>
+            </ul>
         </div>
-      </div>
+        <!-- Reveals Action Sheet -->
+        <div class="menu-group-right">
+            <div zf-action-sheet="" >
+                <div zf-as-button="" title="Item One"></div>
+                    <div zf-as-content="" position="left" id="action" >
+                        <ul class="action-sheet-list">
+                            <li><a href="#" zf-open="canvas-hub" zf-hard-toggle="separate-actionsheet">HUB</a></li>
+                            <li><a href="#" zf-open="canvas-item-info" zf-hard-toggle="separate-actionsheet">ITEM INFO</a></li>
+                            <li><a href="#" zf-open="canvas-search" zf-hard-toggle="separate-actionsheet">SEARCH</a></li>
+                            <li><a href="#" zf-open="canvas-sorter" zf-hard-toggle="separate-actionsheet">SORTER</a></li>
+                            <li><a href="#" zf-open="canvas-history" zf-hard-toggle="separate-actionsheet">HISTORY</a></li>
+                            <li><a href="#" zf-open="canvas-contents" zf-hard-toggle="separate-actionsheet">CONTENTS</a></li>
+                            <li><a href="#" zf-open="canvas-settings" zf-hard-toggle="separate-actionsheet">SETTINGS</a></li>
+                            <li><a href="#" zf-open="canvas-help" zf-hard-toggle="separate-actionsheet">HELP</a></li>
+                            <li><a href="#" zf-open="canvas-shop" zf-hard-toggle="separate-actionsheet">SHOP</a></li>
+                            <li><a href="#" zf-open="canvas-customer-care" zf-hard-toggle="separate-actionsheet">CUSTOMER CARE</a></li>
+                            <li><a href="#" zf-open="canvas-deauthorize" zf-hard-toggle="separate-actionsheet">DEAUTHORIZE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <!-- Bottom bar -->
-    <div class="menu-group primary" id="footer">
-      <div class="menu-group-left">
-        <ul class="menu-bar primary">
-          <li><a href="#">Item One</a></li>
-        </ul>
-      </div>
 
-      <div class="menu-group-center">
-        <ul class="menu-bar primary">
-          <li><a href="#">Item Too</a></li>
-        </ul>
-      </div>
+    <!--Page body content-->
+        <div class="grid-frame">
+          <div class="vertical grid-block">
+            <div class="grid-content content">
+                <p>
+                    Marion Smart was thinking about Carla Zeus again. Carla was a modest queen with tall fingers and spiky abs.
+                    Marion walked over to the window and reflected on her deserted surroundings. She had always loved deserted Glasgow with its obnoxious, obedient oceans. It was a place that encouraged her tendency to feel happy.
+                    Then she saw something in the distance, or rather someone. It was the a modest figure of Carla Zeus.
+                    Marion gulped. She glanced at her own reflection. She was an understanding, popular, cocoa drinker with brunette fingers and fragile abs. Her friends saw her as a powerful, powerless painter. Once, she had even made a cup of tea for a damaged kitten.
+                    But not even an understanding person who had once made a cup of tea for a damaged kitten, was prepared for what Carla had in store today.
+                    The sleet rained like gyrating snakes, making Marion confident. Marion grabbed a peculiar book that had been strewn nearby; she massaged it with her fingers.
+                    As Marion stepped outside and Carla came closer, she could see the outrageous glint in her eye.
+                    "I am here because I want a pencil," Carla bellowed, in an arrogant tone. She slammed her fist against Marion's chest, with the force of 4456 ostriches. "I frigging love you, Marion Smart."
+                    Marion looked back, even more confident and still fingering the peculiar book. "Carla, I shrunk the kids," she replied.
+                    They looked at each other with happy feelings, like two grubby, grisly guppies jogging at a very stupid Christening, which had piano music playing in the background and two admirable uncles cooking to the beat.
+                    Marion studied Carla's tall fingers and spiky abs. Eventually, she took a deep breath. "I'm sorry, but I can't give you a pencil," she explained, in pitying tones.
+                    Carla looked lonely, her body raw like a nervous, nosy newspaper.
+                    Marion could actually hear Carla's body shatter into 5931 pieces. Then the modest queen hurried away into the distance.
+                    Not even a mug of cocoa would calm Marion's nerves tonight.
+                    <br>
+                    <br>
+                    <br>
+                    THE END
+                </p>
+            </div>
+          </div>
 
-      <div class="menu-group-right">
-        <ul class="icon-left primary menu-bar">
-          <li><a href="#">Item Aye</a></li>
-          <li><a href="#">Item Bee</a></li>
-          <li><a href="#">Item Cee</a></li>
-          <li><a href="#">Item Dee</a></li>
-        </ul>
-      </div>
-    </div>
-  </body>
+     <!-- Bottom bar -->
+        <div class="menu-group primary" id="footer">
+            <div class="menu-group-left">
+                <ul class="menu-bar primary">
+                    <li><a href="#">Item One</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-group-center">
+                <ul class="menu-bar primary">
+                    <li><a href="#">Item Too</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-group-right">
+                <ul class="icon-left primary menu-bar">
+                    <li><a href="#">Item Aye</a></li>
+                    <li><a href="#">Item Bee</a></li>
+                    <li><a href="#">Item Cee</a></li>
+                    <li><a href="#">Item Dee</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
 </html>
