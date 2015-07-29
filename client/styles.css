@@ -5,6 +5,11 @@
    	width: 100%;
 }
 
+.scrubber {
+  position: fixed;
+  bottom: 45px;
+}
+
 .content p {
     padding: 80px;
 }
