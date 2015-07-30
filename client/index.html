@@ -4,12 +4,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Prototype</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link href="/assets/css/app.css" rel="stylesheet" type="text/css">
-        <script src="/assets/js/foundation.js"></script>
-        <script src="/assets/js/templates.js"></script>
-        <script src="/assets/js/routes.js"></script>
-        <script src="/assets/js/app.js"></script>
     </head>
     <body>
         <!-- Hub Fly-Out -->
@@ -353,11 +349,11 @@
         </div>
 
         <!-- Bottom bar -->
-        <input class="scrubber" type="range">
+        <input id="scrubber" type="range" style="display:none;">
         <div class="menu-group primary" id="footer">
             <div class="menu-group-left">
                 <ul class="menu-bar primary">
-                    <li><a href="#">Item One</a></li>
+                    <li><a href="#" onClick="toggleScrubber('scrubber')">Scrubber</a></li>
                 </ul>
             </div>
 
@@ -376,5 +372,11 @@
                 </ul>
             </div>
         </div>
+        <!-- JavaScript -->
+        <script src="/assets/js/foundation.js"></script>
+        <script src="/assets/js/templates.js"></script>
+        <script src="/assets/js/routes.js"></script>
+        <script src="/assets/js/app.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>

@@ -5,7 +5,7 @@
     width: 100%;
 }
 
-.scrubber {
+#scrubber {
     position: fixed;
     bottom: 45px;
 }
