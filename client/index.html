@@ -6,6 +6,7 @@
         <title>Prototype</title>
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link href="/assets/css/app.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     </head>
     <body>
         <!-- Hub Fly-Out -->
@@ -300,7 +301,7 @@
         <!-- Reveals Action Sheet -->
             <div class="menu-group-right">
                 <div zf-action-sheet="" >
-                    <div zf-as-button="" title="Item One"></div>
+                    <div zf-as-button="" title="Drop-Down"></i></div>
                     <div zf-as-content="" position="left" id="action">
                         <ul class="action-sheet-list">
                             <li><a href="#" zf-open="canvas-hub" zf-hard-toggle="separate-actionsheet">HUB</a></li>
@@ -359,16 +360,15 @@
 
             <div class="menu-group-center">
                 <ul class="menu-bar primary">
-                    <li><a href="#">Item Too</a></li>
+                    <form>
+                        <input id="pageInput" type="text" placeholder="Page Number" onkeypress="changePage()">
+                    </form>
                 </ul>
             </div>
 
             <div class="menu-group-right">
                 <ul class="icon-left primary menu-bar">
-                    <li><a href="#">Item Aye</a></li>
-                    <li><a href="#">Item Bee</a></li>
-                    <li><a href="#">Item Cee</a></li>
-                    <li><a href="#">Item Dee</a></li>
+                    <li><a href="#">View Controls</a></li>
                 </ul>
             </div>
         </div>
