@@ -2,7 +2,7 @@
   "name": "foundation-apps-template",
   "version": "1.1.0",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp server",
   },
   "devDependencies": {
     "babel": "^5.8.20",
