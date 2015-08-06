@@ -11,7 +11,7 @@ var connect = require("gulp-connect");
 var open = require("gulp-open");
 var watch = require("gulp-watch");
 
-var URL_TO_RUNNER_HTML = "http://proto.localtest.me:8020/public/";
+var URL_TO_RUNNER_HTML = "http://proto.localtest.me:8030/public/";
 var isLiveReloadEnabled = false;
 
 gulp.task("browserify", function () {
@@ -26,7 +26,10 @@ gulp.task("browserify", function () {
             .pipe(gulp.dest("./public/js"));
     }
 
-    var b = watchify(browserify(["./lib/main.js"], watchify.args))
+    var opts = watchify.args;
+    opts.extensions = [".jsx"];
+
+    var b = watchify(browserify(["./lib/main.js"], opts))
         .require("jquery")
         .transform(babelify)
         .on("update", bundle);
