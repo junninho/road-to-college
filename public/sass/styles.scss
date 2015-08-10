@@ -1,0 +1,135 @@
+#footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+#scrubber {
+    position: fixed;
+    bottom: 45px;
+    display: none;
+}
+
+.content p {
+    padding: 80px;
+}
+
+#action {
+    width: 250px;
+    position: absolute;
+}
+
+.action-sheet-container .button {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.action-sheet ul.action-sheet-list {
+    margin-right: 40px;
+}
+
+.medium-6 a {
+    text-align: center;
+}
+
+.canvas-title {
+    color: #245983;
+    font-weight: bold;
+}
+
+.canvas-buttons {
+    color: #47638C;
+}
+
+#cover {
+    width: 68px;
+    height: 100px;
+}
+
+.books {
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.books img {
+    padding-bottom: 20px;
+}
+
+#book-info {
+    color: #D4D9E1;
+    padding-left: 20px;
+}
+
+#book-info p {
+    font-size: 12px;
+    line-height: 1;
+}
+
+.hub-action p {
+    color: #566B91;
+    padding-top: 40px;
+    font-size: 14px;
+}
+
+.hub-delete {
+    text-align: right;
+}
+
+.help {
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.help a {
+    color: black;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+.whats-new {
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.whats-new a {
+    color: black;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+.whats-new-heading {
+    font-weight: bold;
+}
+
+.new {
+    margin-left: 20px;
+}
+
+.update {
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.update a {
+    color: black;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+.faq {
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.faq a {
+    color: black;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+#faq-text {
+    padding-top: 30px;
+}
