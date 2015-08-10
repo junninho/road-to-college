@@ -1,0 +1,34 @@
+.top-app-bar {
+    background-color: #F8F6F8;
+
+    .left {
+        a {
+            color: #6C9ACD;
+        }
+    }
+
+    .title {
+        color: #98979B;
+    }
+
+    .right {
+        a {
+            color: #6C9ACD;
+        }
+
+        .action-sheet {
+            background-color: #E0E9F5;
+            width: 160px;
+        }
+
+        .action-sheet.is-active {
+            a {
+                color: #92979D;
+            }
+        }
+
+        .action-sheet::after, .action-sheet::before {
+            border-bottom-color: #E0E9F5;
+        }
+    }
+}
