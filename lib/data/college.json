@@ -94,4 +94,19 @@
     "schoolSize":"14,453 Undergrads",
     "schoolSetting":"Rural"
     },
+    {
+    "id": "100",
+    "title": "Boo York University",
+    "logo": "http://balladeer.files.wordpress.com/2010/12/nyuathleticslogo2.jpg",
+    "location": "New York, NY",
+    "youVisitUrl": "http://youvis.it/N7O67J",
+    "description": "A large, 4-year, private university. This coed college is located in a very large city in an urban setting and is primarily a residential campus. It offers certificate, diploma, associate, bachelor's, master's and doctoral degrees.",
+    "costs":"$70,444",
+    "commonApp":"Yes",
+    "applicationDeadline":"2013-1-1",
+    "financialAidDeadline":"2016-2-15",
+    "averageSAT":"1850-2170",
+    "schoolSize":"24,985 Undergrads",
+    "schoolSetting":"Urban"
+    },
 ]
